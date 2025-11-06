@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donate</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Food <b style="color: #06C167;">Donate</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="profile.php" >Profile</a></li>
+                <!-- <li ><a href="fooddonate.html"  >Donate</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <section class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title" style="color: white; font-size: 52px; font-weight: 800; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: fadeInUp 0.8s ease;">
+                Fight Hunger, <br>Feed Hope
+            </h1>
+            <p class="banner-subtitle" style="color: white; font-size: 22px; margin-bottom: 30px; opacity: 0.95; max-width: 600px; line-height: 1.6; animation: fadeInUp 1s ease;">
+                Join us in making a difference. Your excess food can bring joy to someone's life.
+            </p>
+            <a href="fooddonateform.php" style="animation: fadeInUp 1.2s ease;">Donate Food Now</a>
+        </div>
+    </section>
+    
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
+    <div class="content" style="background: white; padding: 60px 20px; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 36px; color: #06C167; margin-bottom: 20px; font-weight: 700;">Our Mission</h2>
+            <p style="font-size: 20px; color: #555; line-height: 1.8;">
+                "Cutting food waste is a delicious way of saving money, helping to feed the world and protect the planet." 
+            </p>
+        </div>
+    </div>
+    <div class="photo" style="padding: 80px 20px; background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="heading" style="font-size: 42px; text-align: center; color: #06C167; margin-bottom: 15px; font-weight: 700;">Our Impact</h2>
+            <p style="font-size: 24px; text-align: center; color: #666; margin-bottom: 50px; font-weight: 300;">"Look what we can do together."</p>
+            
+            <div class="wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px;">
+                <div class="box" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.3s ease; background: white;">
+                    <img src="img/p1.jpeg" alt="" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #06C167; margin-bottom: 10px;">Community Service</h3>
+                        <p style="color: #666;">Distributing food to those in need</p>
+                    </div>
+                </div>
+                <div class="box" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.3s ease; background: white;">
+                    <img src="img/p4.jpeg" alt="" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #06C167; margin-bottom: 10px;">Zero Waste Goal</h3>
+                        <p style="color: #666;">Reducing food wastage together</p>
+                    </div>
+                </div>
+                <div class="box" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.3s ease; background: white;">
+                    <img src="img/p3.jpeg" alt="" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #06C167; margin-bottom: 10px;">Making Difference</h3>
+                        <p style="color: #666;">Every donation counts</p>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .box:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
+                }
+                .box:hover img {
+                    transform: scale(1.05);
+                }
+            </style>
+        </div>
+    </div>
+    <div class="deli" style="padding: 80px 20px; background: white; text-align: center;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="heading" style="font-size: 42px; color: #06C167; margin-bottom: 20px; font-weight: 700;">🚚 Door Step Pickup</h2>
+            <p class="para" style="font-size: 22px; color: #666; margin-bottom: 40px; line-height: 1.6;">
+                "Your donation will be immediately collected and delivered to those in need"
+            </p>
+            <div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <img src="img/delivery.gif" alt="" style="max-width: 400px; width: 100%; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+            </div>
+            <div style="margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                <div style="padding: 30px; background: #f5f5f5; border-radius: 15px;">
+                    <h3 style="color: #06C167; font-size: 48px; margin-bottom: 10px;">24/7</h3>
+                    <p style="color: #666;">Available</p>
+                </div>
+                <div style="padding: 30px; background: #f5f5f5; border-radius: 15px;">
+                    <h3 style="color: #06C167; font-size: 48px; margin-bottom: 10px;">Free</h3>
+                    <p style="color: #666;">Pickup Service</p>
+                </div>
+                <div style="padding: 30px; background: #f5f5f5; border-radius: 15px;">
+                    <h3 style="color: #06C167; font-size: 48px; margin-bottom: 10px;">Fast</h3>
+                    <p style="color: #666;">Delivery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ser">
+      <!-- <p class="heading">Our Services</p> -->
+      
+    </div>
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span> About us</span>The basic concept of this project  Food Waste Management is to collect the excess/leftover  food from donors such as hotels, restaurants, marriage halls , etc and distribute to  the  needy people .
+     </p>
+        
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <p><span> Contact</span> </p>
+            
+          </div>
+          <div>
+        
+            <p> (+00) 0000 000 000</p>
+            
+          </div>
+          <div>
+            <!-- <i class="fa fa-envelope" style="font-size: 17px;
+            line-height: 38px; color:white;"></i> -->
+            <p><a href="#"> Fooddonate@gmail.com</a></p>
+          </div>
+          
+          
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h2> Food<span> Donate</span></h2>
+          <!-- <h2>Food donate</h2> -->
+          <p class="menu">
+            <a href="#"> Home</a> |
+            <a href="about.html"> About</a> |
+            <a href="profile.php"> Profile</a> |
+            <a href="contact.html"> Contact</a>
+          </p>
+          <p class="name"> Food Donate &copy 2023</p>
+        </div>
+      </footer>
+
+    
+</body>
+</html>

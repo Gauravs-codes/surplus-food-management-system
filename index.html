@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donate - Welcome</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -250px;
+    right: -250px;
+    animation: float 6s ease-in-out infinite;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    bottom: -200px;
+    left: -200px;
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 60px 50px;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    letter-spacing: -1px;
+}
+
+.logo b {
+    color: #06C167;
+    position: relative;
+}
+
+.logo b::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #06C167, #049954);
+    border-radius: 2px;
+}
+
+.para {
+    font-size: 22px;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.log {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.log a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #06C167 0%, #049954 100%);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(6, 193, 103, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.log a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s;
+}
+
+.log a:hover::before {
+    left: 100%;
+}
+
+.log a:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(6, 193, 103, 0.4);
+}
+
+.log a:active {
+    transform: translateY(-1px) scale(1);
+}
+
+.log a i {
+    font-size: 22px;
+}
+
+.divider {
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ddd, transparent);
+}
+
+.divider span {
+    background: white;
+    padding: 0 15px;
+    color: #95a5a6;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #95a5a6;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 40px 30px;
+    }
+    
+    .logo {
+        font-size: 36px;
+    }
+    
+    .para {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .log a {
+        font-size: 16px;
+        padding: 16px 30px;
+    }
+    
+    .log a i {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 35px 25px;
+    }
+    
+    .logo {
+        font-size: 32px;
+    }
+    
+    body::before,
+    body::after {
+        display: none;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <p class="logo">Welcome to Food<b>Donate</b></p>
+        <p class="para">Choose your account type</p>
+        
+        <div class="log">
+            <a href="signup.php">
+                <i class="fa-solid fa-user"></i>
+                User Account
+            </a>
+            <a href="admin/signup.php">
+                <i class="fa-solid fa-user-shield"></i>
+                Admin Panel
+            </a>
+            <a href="delivery/deliverysignup.php">
+                <i class="fa-solid fa-motorcycle"></i>
+                Delivery Partner
+            </a>
+        </div>
+        
+        <div class="footer-text">
+            <p>Join us in reducing food waste and helping those in need</p>
+        </div>
+    </div>
+   
+  
+</div>
+
+<div class="add">
+ 
+</div>
+
+
+    
+</body>
+</html>
